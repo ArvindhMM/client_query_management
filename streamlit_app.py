@@ -1,4 +1,3 @@
-# streamlit_app.py
 import streamlit as st
 
 from auth import validate_login
@@ -6,10 +5,7 @@ from query import insert_query, fetch_queries, close_query, delete_query
 
 
 
-# --------------- Helpers ---------------
-
 def do_login():
-    """Render login form and set session_state on success."""
     st.title("Client Query Management System")
 
     st.subheader("Login")
@@ -43,7 +39,7 @@ def sidebar_menu():
 
 
 
-# --------------- Client UI ---------------
+# Client UI 
 
 def client_view():
     st.header("Client Portal")
@@ -86,7 +82,7 @@ def client_view():
         st.error(f"Error fetching queries: {e}")
 
 
-# --------------- Support UI ---------------
+#  Support UI
 
 def support_view():
     st.header("Support Dashboard")
@@ -134,10 +130,9 @@ def support_view():
                         st.error(f"Error closing query: {e}")
 
 
-# --------------- Main App ---------------
+#  Main App 
 
 def main():
-    # Initialize session_state keys
     if "logged_in" not in st.session_state:
         st.session_state["logged_in"] = False
 
