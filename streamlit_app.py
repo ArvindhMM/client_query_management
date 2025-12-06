@@ -1,7 +1,7 @@
 import streamlit as st
 
 from auth import validate_login
-from query import insert_query, fetch_queries, close_query, delete_query
+from query import insert_query, fetch_queries, close_query
 
 
 
