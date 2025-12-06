@@ -46,12 +46,6 @@ def close_query(query_id):
     conn.commit()
     cursor.close()
     conn.close()
-def delete_query(query_id):
-    conn = get_connection()
-    cursor = conn.cursor()
-
-    cursor.execute("DELETE FROM queries WHERE query_id=%s", (query_id,))
-    conn.commit()
 
     cursor.close()
     conn.close()
