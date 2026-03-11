@@ -34,18 +34,22 @@ The project demonstrates database integration, secure authentication using passw
 ``` bash
 client-query-management-system
 │
-├── backend
-│ ├── app.py
+├── app
+│ ├── streamlit_app.py
 │ ├── auth.py
+│ ├── query.py
 │ ├── db.py
-│ ├── test_login.py
+│ ├── hash.py
+│ └── config.py
 │
-├── data
-│ └── dataset.csv
+├── database.sql
+│
+├── tests
+│ └── test_login.py
 │
 ├── requirements.txt
 ├── README.md
-└── .gitignore
+├── .gitignore
 ```
 
 
